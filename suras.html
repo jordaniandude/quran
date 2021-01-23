@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="#home">جميع السور</a>
+    </div>
+
+    <div id="main">
+      <h1>جميع السور</h1>
+      <div>
+        <div style="overflow-x: auto" class="sura">
+          <input
+            id="search"
+            type="text"
+            onkeyup="searchSuras()"
+            placeholder="...ابحث عن سورة معينة"
+          />
+          <table id="suras">
+            <tr>
+              <th>مكية أو مدنية</th>
+              <th>عدد اياتها</th>
+              <th>اسم السورة</th>
+              <th>رقم السورة</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <script src="./SURAS.js"></script>
+      <script src="./utils.js"></script>
+      <script src="./suras-details.js"></script>
+    </div>
+    <footer>
+      <p>
+        Created with &hearts; by
+        <a target="_blank" href="https://jordaniandude.com">Tariq Elouzeh</a
+        ><br />
+      </p>
+    </footer>
+  </body>
+</html>

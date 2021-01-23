@@ -1,25 +1,130 @@
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+div {
+  text-align: center;
+}
 * {
-    font-family: 'Almarai', sans-serif;
-    background-color: #181818;
-    color:white;
+  font-family: "Almarai", sans-serif;
+  color: white;
 }
 
-.sura {
-    border-width: 1px;
-    border-color: #b8860b;
-    border-style: solid;
-    padding: 5px;
-    font-size: 25px;
-    position: fixed;
-    /* center the element */
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    /* give it dimensions */
-    width: 70%;
-    line-height: 1.6;
+body {
+  background-color: #181818;
+  margin: 0;
 }
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  float: right;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#navbar a:hover {
+  color: #b8860b;
+}
+
+.border {
+  border-width: 1px;
+  border-color: #b8860b;
+  border-style: solid;
+}
+.sura {
+  padding: 5px;
+  font-size: 25px;
+  /* center the element */
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  /* give it dimensions */
+  width: 70%;
+  line-height: 1.6;
+}
+
+#search {
+  width: 50%; /* Full-width */
+  font-size: 18px; /* Increase font-size */
+  padding: 10px; /* Add padding */
+  margin: 5px;
+  text-align: right;
+  color:#181818;
+}
+
+table {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+table th,
+table td {
+  text-align: right; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+table th {
+    color: #b8860b;
+}
+
+table tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+
+table tr:not(:first-child):hover {
+  background-color: #b8860b;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b8860b;
+}
+
+/*
+table tr:nth-child(even) {
+    background-color: #404040;
+}*/
+
+footer {
+    text-align: center;
+    padding: 3px;
+    margin: 20px;
+    color: white;
+  }
