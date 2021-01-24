@@ -23,7 +23,7 @@ body {
 }
 
 /* Navbar links */
-#navbar a {
+#navbar a:nth-child(2) {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -31,6 +31,16 @@ body {
   padding: 14px;
   text-decoration: none;
   float: right;
+}
+
+#navbar img:hover {
+    animation: bounce 1.5s; 
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 /* Page content */
@@ -69,7 +79,7 @@ body {
   margin-left: auto;
   /* give it dimensions */
   width: 70%;
-  line-height: 1.6;
+  line-height: 2.0;
 }
 
 #search {
