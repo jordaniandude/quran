@@ -13,7 +13,7 @@ function buildSuraText(data) {
 }
 
 let suraParagraph = document.getElementById("sura");
-const id = getParameterByName("id");
+const id = getParameterByName("id") || "1";
 let suraText = buildSuraText(QURAN[id]);
 suraParagraph.innerHTML = suraText;
 
